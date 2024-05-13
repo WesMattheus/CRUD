@@ -1,0 +1,25 @@
+.field{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.field input{
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px 0;
+}
+
+.field span{
+    font-size: 12px;
+    font-weight: 300;
+    color:red;
+    display: none;
+}
+
+.field input:invalid[focused="true"] ~ span{
+    display: block;
+}

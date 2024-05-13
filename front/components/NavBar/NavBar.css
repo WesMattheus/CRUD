@@ -1,0 +1,29 @@
+.navBar{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #020024;
+    margin-bottom: 30px;
+}
+
+
+.navBar p{
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navBar a:hover{
+    color: #6082B6;
+    transition: 0.3s;
+}
+
+.navBar img{
+    width: 32px;
+    margin-left: 10px;
+}
