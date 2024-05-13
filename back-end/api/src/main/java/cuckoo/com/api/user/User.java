@@ -30,4 +30,16 @@ public class User {
         this.email = data.email();
     }
 
+    public void UpdateRegister(UserUpdateData data) {
+        if(data.nome() != null){
+            this.nome = data.nome();
+        }
+        if(data.email() != null){
+            this.email = data.email();
+        }
+        if(data.idade() != 0){
+            this.idade = data.idade();
+        }
+    }
+
 }

@@ -30,4 +30,16 @@ public class UserController {
     public Page<DataUserListing> getUsers(Pageable pagination){
         return repository.findAll(pagination).map(DataUserListing::new);
     }
+
+    @PutMapping
+    @Transactional
+    public void updateUser(@RequestBody @Valid UserUpdateData data){
+        var user = repository.getReferenceById(data.id());
+        user.UpdateRegister(data);
+    }
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable UUID id){
+        repository.deleteById(id);
+    }
+}
 }
