@@ -14,6 +14,13 @@ O sistema terá funcionalidade padrão, incluindo requisitos funcionais e não f
 * Entre os requisitos funcionais estão: cadastro de paciente; pesquisa cliente; alteração do cadastro; exlusão do cadastro; agendamento de consulta e emissão de relatórios.
 * Os requisitos não funcionais incluirão métricas de desempenho, usabilidade, segurança, hardware e software.
 
+## **Público-Alvo** (descrição dos atores):
+
+O Sistema poderá conter até 3 atores, com perfis diferentes. Cada perfil terá privilégios diferentes no sistema.
+
+1. *Paciente:* Pessoa cujo os dados registrados pelo usuário do sistema.
+2.  *Usuário:* Pessoa responsável pelo cadastro e atualização de informações imporantes do paciente no sistema.
+3.   *Administrador do sistema:* Pessoa que terá privilégios às funcionalidades e gerenciamento do sistema. Podendo fazer tudo que um usuário comum faz, mas somente ele pode cadastrar ou excluir um usuário.
 
 ## **Prototipo das telas:**
 
