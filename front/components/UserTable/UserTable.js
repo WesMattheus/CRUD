@@ -12,6 +12,17 @@ const UserTable = (props) => {
           setUsers(data.content);
         });
       }, []);
+      const handleDelete = (id) =>{
+        fetch(`http://localhost:8080/crud/${id}`,{
+            method: 'DELETE',
+       }).then(response => {
+              if (response.ok) {
+                  setUsers(users.filter(item => item.id !== id));
+              } else {
+                  console.error('Failed to delete data');
+              }
+          });
+      };
 
     return(
         <div className='content-container'>
@@ -20,16 +31,25 @@ const UserTable = (props) => {
             <tr>
               <th>Nome</th>
               <th>Idade</th>
-              <th>Email</th>
+              <th>Altura</th>
+              <th>Cidade</th>
+              <th>Rua</th>
+              <th>Complemento</th>
+              <th>Deletar</th>
             </tr>
           {users ? users.filter((user) =>{
-            return search.toLowerCase() === '' ? user : user.name.toLowerCase().includes(search)
+            return search.toLowerCase() === '' ? user : user.nome.toLowerCase().includes(search)
           }).map((user) =>(
             <tr>
-              <td>{user.name}</td>
-              <td>{user.age}</td>
-              <td>{user.email}</td>
+              <td>{user.nome}</td>
+              <td>{user.idade}</td>
+              <td>{user.altura}</td>
+              <td>{user.cidade}</td>
+              <td>{user.rua}</td>
+              <td>{user.complemento}</td>
+              <td><button onClick={() => handleDelete(user.id)}>deletar</button></td>
             </tr>
+            
           )) : []}
           </table>
         </div>
