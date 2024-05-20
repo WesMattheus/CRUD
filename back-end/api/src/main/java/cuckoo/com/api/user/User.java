@@ -1,5 +1,7 @@
 package cuckoo.com.api.user;
 
+import cuckoo.com.api.user.dto.UserRegisterData;
+import cuckoo.com.api.user.dto.UserUpdateData;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -22,23 +24,35 @@ public class User {
     private UUID id;
     private String nome;
     private int idade;
-    private String email;
+    private float altura;
+    private String cidade;
+    private String rua;
+    private String complemento;
 
     public User(UserRegisterData data){
         this.nome = data.nome();
         this.idade = data.idade();
-        this.email = data.email();
+        this.altura = data.altura();
+        this.cidade = data.cidade();
+        this.rua = data.rua();
+        this.complemento = data.complemento();
     }
 
     public void UpdateRegister(UserUpdateData data) {
         if(data.nome() != null){
             this.nome = data.nome();
         }
-        if(data.email() != null){
-            this.email = data.email();
-        }
         if(data.idade() != 0){
             this.idade = data.idade();
+        }
+        if(data.altura() != 0){
+            this.altura = data.altura();
+        }
+        if(data.cidade() != null){
+            this.cidade = data.cidade();
+        }
+        if(data.complemento() != null){
+            this.complemento = data.complemento();
         }
     }
 
