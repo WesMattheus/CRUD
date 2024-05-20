@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     padding: 25px;
+    margin: 0 10px 10px 10px;
     border-radius: 10px;
     background-color: #020024;
     width: 400px;
@@ -30,7 +31,6 @@
     border: none;
     outline: none;
     width: 100%;
-
 }
 
 .form button:hover{
@@ -44,6 +44,14 @@
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
+.cidades{
+    width: 100%;
+    padding: 10px;
+    margin: 7px 0 7px 0;
+    border-radius: 10px;
+}
+
 
 @media only screen and (max-width: 500px) {
     .container-form{
