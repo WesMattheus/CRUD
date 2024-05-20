@@ -13,3 +13,15 @@ O sistema terá funcionalidade padrão, incluindo requisitos funcionais e não f
 
 * Entre os requisitos funcionais estão: cadastro de paciente; pesquisa cliente; alteração do cadastro; exlusão do cadastro; agendamento de consulta e emissão de relatórios.
 * Os requisitos não funcionais incluirão métricas de desempenho, usabilidade, segurança, hardware e software.
+
+
+## **Prototipo das telas:**
+
+A tela para cadastro dos pacientes:
+
+*![tela_front_cadastro](tela_front_cadastro.jpg)
+
+A tela para visualização ds dados cadastrados:
+
+![tela_front_dashboard](tela_front_dashboard.jpg)
+
