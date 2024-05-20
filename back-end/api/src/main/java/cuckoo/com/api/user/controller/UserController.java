@@ -1,6 +1,9 @@
-package cuckoo.com.api.controller;
+package cuckoo.com.api.user.controller;
 
 import cuckoo.com.api.user.*;
+import cuckoo.com.api.user.dto.DataUserListing;
+import cuckoo.com.api.user.dto.UserRegisterData;
+import cuckoo.com.api.user.dto.UserUpdateData;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +11,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -41,5 +43,4 @@ public class UserController {
     public void delete(@PathVariable UUID id){
         repository.deleteById(id);
     }
-}
 }

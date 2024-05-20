@@ -1,16 +1,17 @@
-package cuckoo.com.api.user;
+package cuckoo.com.api.user.dto;
 
 import jakarta.validation.constraints.*;
 
-import java.util.Date;
-
 public record UserRegisterData(
-
         @NotBlank
         String nome,
         @Digits(integer = 6, fraction = 0)
         int idade,
+        @Digits(integer = 1, fraction = 2)
+        float altura,
         @NotBlank
-        @Email
-        String email) {
+        String cidade,
+        @NotBlank
+        String rua,
+        String complemento) {
 }
