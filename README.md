@@ -17,6 +17,8 @@ O sistema terá funcionalidade padrão, incluindo requisitos funcionais e não f
 
 ## **Prototipo das telas:**
 
+Tela Inicial
+
 A tela para cadastro dos pacientes:
 
 ![tela_front_cadastro](tela_front_cadastro.jpg)
